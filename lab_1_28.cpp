@@ -29,7 +29,7 @@ int main() {
     printf("Введите элементы матрицы A:\n");
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
-            printf("Элемент [%d][%d]: ", i, j);
+            printf("Элемент [%d][%d]: ", i+1, j+1);
             scanf_s("%d", &chr[i][j]);
         }
     }
