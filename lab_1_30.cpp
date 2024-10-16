@@ -41,19 +41,16 @@ int main() {
 
     for (int i = 0, o = 0; i < L; i++) {
         if (vector_A[i] < vector_B[i]) {
-            result[o] = vector_B[i];
-            result[o + 1] = vector_A[i];
-            o += 2;
+            printf("\033[32m");
+            printf("%d ", vector_B[i]);
+            printf("%d ", vector_A[i]);
+            printf("\033[0m");
+            
         }
-        if (vector_A[i] > vector_B[i]) {
-            result[o] = vector_A[i];
-            result[o + 1] = vector_B[i];
-            o += 2;
+        if (vector_A[i] >= vector_B[i]) {
+            printf("%d ", vector_A[i]);
+            printf("%d ", vector_B[i]);
+            
         }
     }
-
-    for (int i = 0; i < LAB; i++) {
-        printf("%d ", result[i]);
-    }
-
 }
